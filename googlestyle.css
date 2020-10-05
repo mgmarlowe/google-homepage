@@ -1,0 +1,37 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-appearance: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "about store . gmail image menu sign-in";
+}
+
+#about {
+    grid-area: about;
+}
+#store {
+    grid-area: store;
+}
+#gmail {
+    grid-area: gmail;
+}
+#images {
+    grid-area: images;
+}
+#menu {
+    grid-area: menu;
+}
+#sign-in {
+    grid-area: sign-in;
+}
